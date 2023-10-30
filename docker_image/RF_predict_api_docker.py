@@ -69,5 +69,6 @@ def predict_iris_file():
     return str(list(prediction))
 
 # run app
+# specify host is because we are running on docker, not local machine
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=5000)
+    app.run(host='0.0.0.0', port=5000) 
